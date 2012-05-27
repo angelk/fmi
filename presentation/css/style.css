@@ -1,0 +1,202 @@
+.chainer{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+.gherkin-keyword{
+    color: #204A87;
+    font-weight: bold;
+}
+
+.php-keyword{
+    color: #204A87;
+    font-weight: bold;
+}
+
+.yml-key{
+    color: #204A87;
+}
+
+.comment {
+    color: darkseagreen;
+}
+
+.overview{
+    z-index: -1;
+}
+
+
+#site{
+    padding-top: 250px;
+    text-align: center;
+    font-size: 350px;
+}
+
+#site_server{
+    text-align: center;
+    font-size: 300px;
+}
+
+#site.active{
+    z-index: 10;
+}
+
+#apache{
+    padding-top: 250px;
+    text-align: center;
+    font-size: 230px;
+}
+
+#apache_php{
+    padding-top: 250px;
+    text-align: center;
+    font-size: 400px;
+}
+
+#php{
+    padding-top: 350px;
+    text-align: center;
+    font-size: 300px;
+}
+
+#mysql{
+    padding-top: 350px;
+    text-align: center;
+    font-size: 230px;
+}
+
+#apc{
+    padding-top: 350px;
+    text-align: center;
+    font-size: 350px;
+}
+
+#test{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 300px;
+    line-height: 300px;
+}
+
+#test.active{
+    z-index: 10;
+}
+
+#test_types {
+    font-size: 80px;
+    line-height: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+#test_types_overview {
+    z-index: -1;
+    padding: 0;
+}
+
+#impress.step-test_types_overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#gherkin.active{
+    z-index: 100;
+}
+
+#site_overview{
+    z-index: -1;
+    padding: 0;
+}
+
+#impress.step-site_overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#zf{
+    font-size: 100px;
+    line-height: 100px;
+}
+
+#bdd{
+    font-size: 200px;
+    line-height: 100px;
+}
+
+#phpunit{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 70px;
+}
+
+#gherkin-behat {
+    z-index: -1;
+    padding: 0;
+}
+
+#impress.step-gherkin_behat .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#gherkin_overview{
+    z-index: -1;
+}
+
+#impress.step-gherkin_overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#gherkin_overview_when {
+    z-index: -1;
+}
+
+#impress.step-gherkin_overview_when .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#behat_overview_ptbf{
+    z-index: -1;
+}
+
+#impress.step-behat_overview_ptbf .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#impress.step-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#impress.step-gherkin_behat_connection .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#behat_browsers {
+    z-index: -1;
+    padding: 0;
+}
+#impress.step-behat_browsers .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#end_overview{
+    z-index: -1;
+    padding: 0;
+}
+
+#tnx{
+    padding-top: 300px;
+    font-size: 60px;
+}
+
+#impress.step-end_overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
