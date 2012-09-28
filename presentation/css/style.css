@@ -104,12 +104,11 @@
     z-index: 100;
 }
 
-#site_overview{
-    z-index: -1;
-    padding: 0;
+#site_overview {
+	display: none;
 }
 
-#impress.step-site_overview .step {
+.impress-on-site_overview .step {
     opacity: 1;
     cursor: pointer;
 }
@@ -130,12 +129,11 @@
     font-size: 70px;
 }
 
-#gherkin-behat {
-    z-index: -1;
-    padding: 0;
+#gherkinbehat {
+    display: none;
 }
 
-#impress.step-gherkin_behat .step {
+.impress-on-gherkinbehat .step {
     opacity: 1;
     cursor: pointer;
 }
@@ -149,20 +147,30 @@
     cursor: pointer;
 }
 
-#gherkin_overview_when {
-    z-index: -1;
+#behatoverviewa {
+     display: none;
 }
 
-#impress.step-gherkin_overview_when .step {
+.impress-on-behatoverviewa .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+#gherkin_overview_when {
+    display: none;
+}
+
+.impress.on-gherkin_overview_when .step {
     opacity: 1;
     cursor: pointer;
 }
 
 #behat_overview_ptbf{
-    z-index: -1;
+    display: none;
 }
 
-#impress.step-behat_overview_ptbf .step {
+.impress-on-behat_overview_ptbf .step {
     opacity: 1;
     cursor: pointer;
 }
@@ -187,8 +195,7 @@
 }
 
 #end_overview{
-    z-index: -1;
-    padding: 0;
+	display: none;
 }
 
 #tnx{
@@ -196,7 +203,7 @@
     font-size: 60px;
 }
 
-#impress.step-end_overview .step {
+.impress-on-end_overview .step {
     opacity: 1;
     cursor: pointer;
 }

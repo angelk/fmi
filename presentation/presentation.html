@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -8,45 +9,73 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     </head>
-    <body>
+    <body class="impress-not-supported">
+
+		<!--
+			For example this fallback message is only visible when there is `impress-not-supported` class on body.
+		-->
+		<div class="fallback-message">
+			Chrome/FF15+, моля
+		</div>
 
         <div id="impress">
 
-            <div class="fallback-message">
-                   Chrome моля
-            </div>
+
+
 
 
             <div id="intro_fmi" class="step slide" data-x="-10000" data-y="-2100"  data-scale="1">
-                <div style="text-align: center; font-size: 35px;line-height: 60px; padding-top: 100px;">
-                    <br/>
-                    Пловдивски университет &QUOT;Паисий Хилендарски&QUOT;
-                    <br/>
-                    Факултет по математика и Информатика
-                    <br/>
-                    Бакалавърска програма &QUOT;Информатика&QUOT;
+                <div style="text-align: center; font-size: 30px;line-height: 60px; padding-top: 1px;">
+                    Пловдивски университет „Паисий Хилендарски“<br/>
+					Факултет по математика и информатика<br/>
+					<br/>
+					Дипломна работа<br/>
+					<br/>
+					Тема: „Разработка на Ptbfw“<br/>
+					<br/>
+					<div style="font-size: 20px;">
+						<table style="width: 100%;">
+							<tr>
+								<td style="text-align: left;">
+									Дипломант: Ангел Коилов<br/>
+									Специалност: информатика, редовно<br/>
+									Фак. No 0801261017
+								</td>
+								<td style="text-align: right;">
+									Научен ръководител:<br/>
+									гл. ас. Павлина Иванова
+								</td>
+							</tr>
+						</table>
+
+
+						Пловдив, 2012
+					</div>
+
                 </div>
             </div>
 
-            <div id="intro" class="step slide" data-x="-9000" data-y="-2100"  data-scale="1"
-                 style="text-align: center;">
-                <div style="font-size: 60px; line-height: 60px;">
-                Бакалавърска теза на тема<br/>
-                </div>
-                <br/><br/><br/>
-                <div style="font-size: 120px; line-height: 120px;">
-                    BDD с Behat
-                </div>
-                <br/><br/><br/><br/><br/><br/><br/>
+			<!--
+						<div id="intro" class="step slide" data-x="-9000" data-y="-2100"  data-scale="1"
+							 style="text-align: center;">
+							<div style="font-size: 60px; line-height: 60px;">
+								Бакалавърска теза на тема<br/>
+							</div>
+							<br/><br/><br/>
+							<div style="font-size: 120px; line-height: 120px;">
+								BDD с Behat
+							</div>
+							<br/><br/><br/><br/><br/><br/><br/>
+			
+							<div style="text-align: center; font-size: 35px;line-height: 40px;">
+								научен ръководител: гл.ас. Павлина Иванова<br/>
+								дипломант: Ангел Коилов, ф.н. 0801261017
+							</div>
+						</div>
+			-->
 
-                <div style="text-align: center; font-size: 35px;line-height: 40px;">
-                    научен ръководител: гл.ас. Павлина Иванова<br/>
-                    дипломант: Ангел Коилов, ф.н. 0801261017
-                </div>
-            </div>
 
-
-            <div id="info" class="step slide" data-x="-8000" data-y="-2100"  data-scale="1">
+			<div id="info" class="step slide" data-x="-9000" data-y="-2100"  data-scale="1">
                 <div style="text-align: center; font-size: 100px;line-height: 100px;">
                     BDD<br/>
                     Behat
@@ -98,7 +127,7 @@
                 </div>
             </div>
 
-            <div id="site_overview" class="step" data-x="0" data-y="-400"  data-scale="6">
+            <div id="site_overview" class="step overview" data-x="0" data-y="-400"  data-scale="6">
 
             </div>
 
@@ -143,12 +172,12 @@
 
             </div>
 
-            <div id="gherkin" class="step slide" data-x="2500" data-y="6800" data-rotate="0" data-scale="3"
+            <div id="gherkin" class="step" data-x="2500" data-y="6800" data-rotate="0" data-scale="3"
                  style="padding-top: 300px; font-size: 240px; text-align: center;">
                 gherkin
             </div>
 
-            <div id="gherkin_syntax" class="step slide" data-x="3500" data-y="6030" data-rotate="0" data-scale="0.7"
+            <div id="gherkin_syntax" class="step" data-x="1910" data-y="7620" data-rotate="0" data-scale="0.7"
                  style="font-size: 50px; line-height: 55px;">
                 <span class="gherkin-keyword">Feature</span>: ls<br/>
                 List the current directory's contents<br/>
@@ -161,10 +190,10 @@
                 <span class="gherkin-keyword">Then</span> I should get: "bar foo"<br/>
             </div>
 
-            <div id="gherkin_behat" class="step" data-x="2500" data-y="8800" data-rotate="45" data-scale="6">
-            </div>
+			<!--            <div id="gherkinbehat" class="step" data-x="2500" data-y="8800" data-rotate="45" data-scale="6">
+						</div>-->
 
-            <div id="behat_context" class="step slide" data-x="4080" data-y="7780" data-rotate="0" data-scale="0.5">
+            <div id="behat_context" class="step slide" data-x="5700" data-y="7780" data-rotate="0" data-scale="0.5">
                 <span style="font-size: 80px; line-height: 85px; font-weight: bold;">Feature Context</span><br/><br/><br/>
                 <span style="font-size: 40px; line-height: 45px;">
                     <span class="comment">/**<br/>
@@ -177,64 +206,47 @@
                 </span>
             </div>
 
-            <div id="mink" class="step slide" data-x="-3300" data-y="12450" data-rotate="0" data-scale="5"
-                 style="font-size: 95px; line-height: 105px;">
-                <img src="images/mink.png" /><br/>
+			<div id="behatoverviewa" class="step" data-x="2500" data-y="12450" data-rotate="90" data-scale="10"></div>
 
+            <div id="mink" class="step slide" data-x="-3300" data-y="10450" data-rotate="0" data-scale="5"
+                 style="font-size: 55px; line-height: 60px;">
+                <img src="images/mink.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Browser = API<br/>
                 <br/>
                 Headless browser<br/><br/>
-                In-browser
+                In-browser<br/>
+				<img src="images/browsers.png"/>
             </div>
 
-            <div id="sahi" class="step slide" data-x="-3300" data-y="10000" data-rotate="0" data-scale="2">
-                <img src="images/sahi_os.png"/><br/>
-                <img src="images/browsers.png"/>
-                <div style="text-align: center; font-size: 120px; line-height: 140px;">
-                    Browser = API<br/>
-                </div>
+            <div id="sahi" class="step slide" data-x="-3300" data-y="8000" data-rotate="0" data-scale="2"
+				 style="text-align: center;padding-top: 200px;">
+                <img src="images/selenium.png"/><br/><br/>
+				<span style="font-size: 70px;font-weight: bold;">Selenium2</span><br/>
             </div>
 
 
 
-            <div id="gherkin_overview" class="step slide" data-x="2500" data-y="6800" data-rotate="0" data-scale="3">
-
-            </div>
-
-            <div id="gherkin_overview_when" class="step" data-x="3250" data-y="6000" data-rotate="0" data-scale="0.3">
-
-            </div>
+			<!--            <div id="gherkin_overview" class="step" data-x="2500" data-y="6800" data-rotate="0" data-scale="3">
+			
+						</div>
+			
+						<div id="gherkin_overview_when" class="step" data-x="3250" data-y="6000" data-rotate="0" data-scale="0.3">
+			
+						</div>-->
 
             <div id="behat_overview_ptbf" class="step" data-x="2500" data-y="10450" data-rotate="90" data-scale="11">
 
             </div>
 
-            <div id="mysql" class="step slide" data-x="-1900" data-y="16250" data-rotate="0" data-scale="2">
-                MySQL
-            </div>
-
-            <div id="behat_known_start" class="step slide" data-x="-1900" data-y="17800" data-rotate="0" data-scale="2"
-                 style="padding-top: 0px; font-size: 75px; line-height: 80px;"
-                 >
-
-                <span class="yml-key">init</span>:<br/>
-                &nbsp;&nbsp;<span class="yml-key">local_service</span>:<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">type</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mysql'<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">host</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'localhost'<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">user</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'behat'<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">password</span>:&nbsp;&nbsp;&nbsp;'1'<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">database</span>:&nbsp;&nbsp;&nbsp;&nbsp;'behat'<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">directory</span>:&nbsp;&nbsp;&nbsp;&nbsp;'local'<br/>
-
-            </div>
 
 
-            <div id="behat_known_feature_contexts_a_log_of_steps" class="step slide" data-x="-3800" data-y="16250" data-rotate="0" data-scale="2"
+
+            <div id="behat_known_feature_contexts_a_log_of_steps" class="step slide" data-x="-1900" data-y="16250" data-rotate="0" data-scale="2"
                  style="padding-top: 150px; font-size: 200px; line-height: 210px; text-align: center;">
                 2500+ steps
             </div>
 
-            <div id="behat_known_feature_contexts" class="step slide" data-x="-3800" data-y="17800" data-rotate="0" data-scale="2"
-                 style="padding-top: 110px; font-size: 80px; line-height: 95px;"
+            <div id="behat_known_feature_contexts" class="step slide" data-x="-1900" data-y="17800" data-rotate="0" data-scale="2"
+                 style="padding-top: 110px; font-size: 70px; line-height: 90px;"
                  >
 
                 <span class="yml-key">context_dir</span>: <br/>
@@ -243,8 +255,55 @@
 
             </div>
 
+			<div id="ptbfw_initializer" class="step slide" data-x="-4800" data-y="14100" data-rotate="0" data-scale="4"
+                 style="font-size: 130px; line-height: 140px; padding-top: 80px;text-align: center;">
+				<br/>
+               Initializer
+            </div>
 
-            <div id="behat_mink_a_lot_of_browsers" class="step slide" data-x="-5800" data-y="16250" data-rotate="0" data-scale="2"
+			<div id="mysql" class="step slide" data-x="-3800" data-y="16250" data-rotate="0" data-scale="2">
+                MySQL
+            </div>
+
+            <div id="behat_known_start" class="step slide" data-x="-3800" data-y="17800" data-rotate="0" data-scale="2"
+                 style="padding-top: 0px; font-size: 55px; line-height: 65px;"
+                 >
+				<span class="yml-key">extensions</span>:<br/>
+				&nbsp;&nbsp;<span class="yml-key">Ptbfw\Initializer\Extension</span>:<br/>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">local_service</span>:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">type</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mysql'<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">host</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'localhost'<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">user</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'behat'<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">password</span>:&nbsp;&nbsp;&nbsp;'1'<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">database</span>:&nbsp;&nbsp;&nbsp;&nbsp;'behat'<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">directory</span>:&nbsp;&nbsp;&nbsp;&nbsp;'local'<br/>
+
+            </div>
+
+			<div id="ptbfw_memcached" class="step slide" data-x="-5800" data-y="16250" data-rotate="0" data-scale="2"
+                 style="font-size: 130px; line-height: 140px; padding-top: 80px;text-align: center;">
+				<br/>
+				Memcached
+            </div>
+
+
+            <div id="ptbfw_memcached_example" class="step slide" data-x="-5800" data-y="17800" data-rotate="0" data-scale="2"
+				 style="padding-top: 0px; font-size: 55px; line-height: 65px;"
+                 >
+				<br/><br/>
+				<span class="yml-key">extensions</span>:<br/>
+				&nbsp;&nbsp;<span class="yml-key">Ptbfw\Initializer\Extension</span>:<br/>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">memcached</span>:<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">type:</span> Memcached<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">servers:</span><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">localServer:</span><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">host:</span> localhost<br/>
+
+            </div>
+
+            <div id="behat_mink_a_lot_of_browsers" class="step slide" data-x="-7800" data-y="16250" data-rotate="0" data-scale="2"
                  style="font-size: 120px; line-height: 130px; padding-top: 80px;text-align: center;">
                 4<br/>
                 3<br/>
@@ -253,7 +312,7 @@
             </div>
 
 
-            <div id="behat_mink_hosts" class="step slide" data-x="-5800" data-y="17800" data-rotate="0" data-scale="2"
+            <div id="behat_mink_hosts" class="step slide" data-x="-7800" data-y="17800" data-rotate="0" data-scale="2"
                  style="padding-top: 80px; font-size: 80px; line-height: 100px;"
                  >
 
@@ -263,6 +322,13 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;<span class="yml-key">host</span>:&nbsp;&nbsp;&nbsp;'192.168.1.57'<br/>
 
 
+            </div>
+
+			<div id="ptbfw_selenium" class="step slide" data-x="-10600" data-y="17025" data-rotate="0" data-scale="4"
+                 style="font-size: 120px; line-height: 130px; padding-top: 80px;text-align: center;">
+                Ptbfw<br/>
+                Selenium<br/>
+                Driver<br/>
             </div>
 
             <div id="end_overview" class="step" data-x="3900" data-y="6000" data-scale="23">
@@ -284,7 +350,7 @@
 
 
         <script src="js/impress.js"></script>
-        <script>impress();</script>
+        <script>impress().init();</script>
 
     </body>
 </html>
